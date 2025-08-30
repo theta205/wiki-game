@@ -73,6 +73,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Inspired by popular word-guessing games
-- Built with [Next.js](https://nextjs.org/) and [shadcn/ui](https://ui.shadcn.com/)
-- Icons by [Lucide](https://lucide.dev/)
-- Toast notifications by [Sonner](https://sonner.emilkowal.ski/)
