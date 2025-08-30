@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wiki Game
 
-## Getting Started
+A fun and engaging Wikipedia-based guessing game built with Next.js, TypeScript, and Tailwind CSS. Test your knowledge by guessing Wikipedia articles based on their content.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Daily Wikipedia article challenges
+- Progressive sentence reveals
+- Share your results with friends
+- Game statistics and streaks
+- Mobile-friendly design
+- Beautiful UI with dark mode support
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **State Management**: React Hooks
+- **Type Safety**: TypeScript
+- **Notifications**: [Sonner](https://sonner.emilkowal.ski/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/wiki-game.git
+   cd wiki-game
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to play!
 
-## Deploy on Vercel
+## 🎮 How to Play
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. You'll be shown a series of sentences from a Wikipedia article
+2. Guess what the article is about
+3. Each incorrect guess reveals another sentence
+4. Try to guess the article in as few attempts as possible
+5. Share your results with friends!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📦 Dependencies
+
+- `next`: 14.0.0+
+- `react`: 18.2.0+
+- `react-dom`: 18.2.0+
+- `tailwindcss`: 3.3.0+
+- `class-variance-authority`: 0.7.0+
+- `lucide-react`: 0.250.0+
+- `sonner`: 2.0.0+
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Inspired by popular word-guessing games
+- Built with [Next.js](https://nextjs.org/) and [shadcn/ui](https://ui.shadcn.com/)
+- Icons by [Lucide](https://lucide.dev/)
+- Toast notifications by [Sonner](https://sonner.emilkowal.ski/)
