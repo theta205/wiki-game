@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Share2, Copy, Check } from "lucide-react"
-import { useToast } from "@/hooks/use-toast"
+import { toast } from "sonner"
 
 interface ShareResultsProps {
   won: boolean
@@ -15,7 +15,6 @@ interface ShareResultsProps {
 
 export function ShareResults({ won, sentencesRevealed, totalSentences, articleTitle, category }: ShareResultsProps) {
   const [copied, setCopied] = useState(false)
-  const { toast } = useToast()
 
   const generateShareText = () => {
     const date = new Date().toLocaleDateString("en-US", {
@@ -64,17 +63,14 @@ Play at wikiguess.daily`
     try {
       await navigator.clipboard.writeText(shareText)
       setCopied(true)
-      toast({
-        title: "Copied to clipboard!",
-        description: "Share your results with friends",
+      toast.success("Copied to clipboard!", {
+        description: "Share your results with friends"
       })
 
       setTimeout(() => setCopied(false), 2000)
     } catch (error) {
-      toast({
-        title: "Failed to copy",
-        description: "Please try again",
-        variant: "destructive",
+      toast.error("Failed to copy", {
+        description: "Please try again"
       })
     }
   }
